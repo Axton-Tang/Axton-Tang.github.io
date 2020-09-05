@@ -9,11 +9,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
-    <meta name="keywords" content="TriDiamond Obsidian,"> 
+    <meta name="keywords" content="Axton,Axton-Tang,前端博客,"> 
     
     <meta name="author" content="Axton Tang"> 
     <link rel="alternative" href="atom.xml" title="Axton&#39;s Blog" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
+    <link rel="icon" href="/img/axton-avatar.jpg"> 
     <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
     
 <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
@@ -60,7 +60,7 @@
                 <div class="content animated fadeIn">
                     <div class="set">
                         <h1 style="text-align: center">Archived</h1>
-                        <p style="text-align: center">「 2 」</p>
+                        <p style="text-align: center">「 1 」</p>
                         <ul class="timeline timeline-centered">
                             
                             
@@ -75,28 +75,15 @@
                                 
                                 <li class="timeline-item">
                                     <div class="timeline-info">
-                                        <span class="gradient-text">九月 04, 2020</span>
+                                        <span class="gradient-text">九月 05, 2020</span>
                                     </div>
                                     <div class="timeline-marker"></div>
                                     <div class="timeline-content">
-                                        <a class="timeline-title" target="_self" href="/2020/09/04/%E7%94%A8hexo%E6%90%AD%E5%BB%BAgithub%E5%8D%9A%E5%AE%A2%E4%B8%80/">用hexo搭建github博客一</a>
+                                        <a class="timeline-title" target="_self" href="/2020/09/05/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86%EF%BC%8C%E7%BB%99%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%84%E5%BF%AB%E9%80%9F%E6%9F%A5%E9%98%85%E6%8C%87%E5%8D%97/">Git 常用命令整理，给初学者的快速查阅指南</a>
                                         <p>
-                                            
-                                        </p>
-                                    </div>
-                                </li>
-                            
-                                
-                                <li class="timeline-item">
-                                    <div class="timeline-info">
-                                        <span class="gradient-text">九月 04, 2020</span>
-                                    </div>
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <a class="timeline-title" target="_self" href="/2020/09/04/hello-world/">Hello World</a>
-                                        <p>
-                                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
+                                            前言我只在刚学前端时了解过git的一些基础命令，只会一些commit/push/pull等，后来发现越来越不够用了，特别是在想和别合作完成一个项目时，特别害怕自己因为对git操作不熟悉而使项目难以进行。最近，我系统的学习了一些git的原理和命令，整理出来了一些命令给各位初学者一点指南，特别是在大家初学时对一些命令不熟悉可以拿来方便查阅。
+常用命令1、从远程仓库克隆代码
+git clone 从...
                                         </p>
                                     </div>
                                 </li>
@@ -188,10 +175,6 @@ Qu...
 
 
  
-<link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
- 
-<script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
-  
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/js/plugin.js"></script>
 <script src="/js/obsidian.js"></script>
@@ -223,16 +206,6 @@ Qu...
   
 <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
    
-<script src="/js/busuanzi.min.js"></script>
-
-<script>
-  $(document).ready(function () {
-    if ($('span[id^="busuanzi_"]').length) {
-      initialBusuanzi();
-    }
-  });
-</script>
- 
 <link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
 <link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
 
@@ -307,7 +280,7 @@ Qu...
     var typedTextEl = $('.typed-text');
     if (typedTextEl && typedTextEl.length > 0) {
       var typed = new Typed('.typed-text', {
-        strings: ['Think like an artist, develop like an artisan', '艺术家思维去思考问题，工匠创造精神去开发'],
+        strings: ['I hope what you strive for will be as you wish in the end!', '希望你所拼命争取的，最后都能如你所愿！'],
         typeSpeed: 90,
         loop: true,
         loopCount: Infinity,
@@ -323,6 +296,38 @@ Qu...
   }
 </script>
 
+ 
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var valine = new Valine();
+
+  function initValine(path) {
+    if (!path) path = window.location.pathname;
+    let language = 'zh-CN';
+    if (!language) {
+      language = 'en';
+    } else {
+      language = language.toLowerCase();
+    }
+    valine.init({
+      el: '#vcomments',
+      appId: 'QHCOIEBlyjBUMAjaE5ilzafk-gzGzoHsz',
+      appKey: 'ggeGwz8ypB9uiAIYSRH5T0PF',
+      notify: 'false',
+      verify: 'false',
+      avatar: 'mp',
+      placeholder: 'Leave your throughs behind~',
+      visitor: 'true',
+      path: path,
+      lang: language,
+    });
+  }
+
+  $(document).ready(function () {
+    initValine();
+  });
+</script>
 
 
 
