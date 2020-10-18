@@ -2,14 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.axton-tang.top/google0003c3cdd2815115.html</loc>
+    <loc>https://www.axton-tang.top/2020/10/18/Typescript%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</loc>
     
-    <lastmod>2020-09-05</lastmod>
+    <lastmod>2020-10-18</lastmod>
     
   </url>
   
   <url>
     <loc>https://www.axton-tang.top/whoami/index.html</loc>
+    
+    <lastmod>2020-09-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.axton-tang.top/google0003c3cdd2815115.html</loc>
     
     <lastmod>2020-09-05</lastmod>
     
@@ -46,7 +53,7 @@
 
   <url>
     <loc>https://www.axton-tang.top/</loc>
-    <lastmod>2020-09-06</lastmod>
+    <lastmod>2020-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -54,7 +61,14 @@
   
   <url>
     <loc>https://www.axton-tang.top/tags/git/</loc>
-    <lastmod>2020-09-06</lastmod>
+    <lastmod>2020-10-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axton-tang.top/tags/typescript/</loc>
+    <lastmod>2020-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -63,7 +77,14 @@
   
   <url>
     <loc>https://www.axton-tang.top/categories/Tools/</loc>
-    <lastmod>2020-09-06</lastmod>
+    <lastmod>2020-10-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axton-tang.top/categories/typescript/</loc>
+    <lastmod>2020-10-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

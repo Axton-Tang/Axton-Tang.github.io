@@ -5,12 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Git 常用命令整理，给初学者的快速查阅指南 - Axton&#39;s Blog</title>
+    <title>Typescript 基础 - Axton&#39;s Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Axton,Axton-Tang,前端博客,"> 
-    <meta name="description" content="前言我只在刚学前端时了解过git的一些基础命令，只会一些commit/push/pull等，后来发现越来越不够用了，特别是在想和别合作完成一个项目时，特别害怕自己因为对git操作不熟悉而使项目难以进,"> 
+    <meta name="description" content="Typescript 基础1、什么是Typescript？编程语言有以下两种类型：
+
+动态类型语言： 只有在运行时才能确定变量的类型 （例如JS / Python）
+静态类型语言： 在编译时就已经确,"> 
     <meta name="author" content="Axton Tang"> 
     <link rel="alternative" href="atom.xml" title="Axton&#39;s Blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/axton-avatar.jpg"> 
@@ -60,7 +63,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/axton-avatar.jpg" alt="" data-url="https://www.axton-tang.top">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">Git 常用命令整理，给初学者的快速查阅指南</h3>
+        <h3 class="subtitle">Typescript 基础</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -91,29 +94,29 @@
         <div class="else">
             <p class="animated fadeInDown">
                 
-                <a href="/categories/Tools"><b>「
-                    </b>TOOLS<b> 」</b></a>
+                <a href="/categories/typescript"><b>「
+                    </b>TYPESCRIPT<b> 」</b></a>
                 
-                九月 05, 2020
+                十月 18, 2020
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2020/09/05/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86%EF%BC%8C%E7%BB%99%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%84%E5%BF%AB%E9%80%9F%E6%9F%A5%E9%98%85%E6%8C%87%E5%8D%97/" title="Git 常用命令整理，给初学者的快速查阅指南" class="">Git 常用命令整理，给初学者的快速查阅指南</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2020/10/18/Typescript%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" title="Typescript 基础" class="">Typescript 基础</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>文章字数</i>
-                    3.2k
+                    8.8k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
-                    3 mins.
+                    8 mins.
                 </span>
                 
                 
-                <span id="/2020/09/05/Git 常用命令整理，给初学者的快速查阅指南/" class="leancloud_visitors" data-flag-title="Git 常用命令整理，给初学者的快速查阅指南">
+                <span id="/2020/10/18/Typescript基础知识/" class="leancloud_visitors" data-flag-title="Typescript 基础">
                     <b class="iconfont icon-read"></b> <i>阅读次数</i>
                     <span class="leancloud-visitors-count">1000000</span>
                 </span>
@@ -122,7 +125,7 @@
             </p>
             
             
-            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/git/" rel="tag">git</a></li></ul>
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/typescript/" rel="tag">typescript</a></li></ul>
             
         </div>
     </div>
@@ -143,88 +146,279 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>我只在刚学前端时了解过<code>git</code>的一些基础命令，只会一些<code>commit</code>/<code>push</code>/<code>pull</code>等，后来发现越来越不够用了，特别是在想和别合作完成一个项目时，特别害怕自己因为对<code>git</code>操作不熟悉而使项目难以进行。最近，我系统的学习了一些<code>git</code>的原理和命令，整理出来了一些命令给各位初学者一点指南，特别是在大家初学时对一些命令不熟悉可以拿来方便查阅。</p>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>1、从远程仓库克隆代码</p>
-<pre><code class="shell">git clone 从仓库复制的地址
+            <h2 id="Typescript-基础"><a href="#Typescript-基础" class="headerlink" title="Typescript 基础"></a>Typescript 基础</h2><h3 id="1、什么是Typescript？"><a href="#1、什么是Typescript？" class="headerlink" title="1、什么是Typescript？"></a>1、什么是Typescript？</h3><p>编程语言有以下两种类型：</p>
+<ul>
+<li>动态类型语言： 只有在运行时才能确定变量的类型 （例如<code>JS</code> / <code>Python</code>）</li>
+<li>静态类型语言： 在编译时就已经确定了变量类型，以及能够检查出错误（例如 <code>c++</code> / <code>c</code> / <code>c#</code> / <code>java</code>）</li>
+</ul>
+<p>TS 的特点：</p>
+<ul>
+<li>Javascript that scales （JS的超集）</li>
+<li>静态类型风格的类型系统</li>
+<li>从<code>es6</code>到<code>es10</code>甚至是<code>esnext</code>的语法支持</li>
+<li>兼容各种浏览器，各种系统，各种服务器，完全开源</li>
+</ul>
+<h3 id="2、为什么要使用-TS-？"><a href="#2、为什么要使用-TS-？" class="headerlink" title="2、为什么要使用 TS ？"></a>2、为什么要使用 TS ？</h3><ul>
+<li>程序更容易理解：容易知道函数的输入输出类型及外部条件，出错几率小</li>
+<li>编译期间能够发现大部分错误</li>
+<li>完全兼容JS</li>
+</ul>
+<h3 id="3、基础使用"><a href="#3、基础使用" class="headerlink" title="3、基础使用"></a>3、基础使用</h3><p>新建 <code>test.ts</code> 文件</p>
+<pre><code class="typescript">const hello = (name:string) =&gt; &#123;
+  return `Hello $&#123;name&#125;`
+&#125;
 
-// 建议复制SSH， 使用HTTPS每次需要输入远程仓库账号密码，比较麻烦</code></pre>
-<p>2、查看提交日志</p>
-<pre><code class="shell">git log</code></pre>
-<p>3、查看工作目录当前状态</p>
-<pre><code class="shell">git status</code></pre>
-<p>4、增加文件到缓存区</p>
-<pre><code class="shell">git add 文件名
+hello(&#39;Axton Tang&#39;)</code></pre>
+<p>使用 <code>tsc</code> 命令进行编译成 js 文件</p>
+<p>该函数要求传入的参数为 <code>string</code> 类型，如何传入其他类型，编译则会报错</p>
+<h4 id="（1）原始数据类型和-Any-类型"><a href="#（1）原始数据类型和-Any-类型" class="headerlink" title="（1）原始数据类型和 Any 类型"></a>（1）原始数据类型和 <code>Any</code> 类型</h4><pre><code class="ts">let isDone: boolean = true
 
-// 使用以下命令会将改动全部提交到缓存区
-git add .</code></pre>
-<p>5、提交代码到本地仓库</p>
-<pre><code class="shell">git commit -m &quot;此处填写修改的的信息&quot;</code></pre>
-<p>6、将代码提交到远程仓库</p>
-<pre><code class="shell">git push
+let age: number = 20
 
-//注意：如果 push 的是远程仓库没有的分支，按照以下写法
-git push origin 分支名称</code></pre>
-<p>7、从远程仓库拉取代码</p>
-<pre><code class="shell">git pull</code></pre>
-<p>8、在当前<code>commit</code>处新建一个分支</p>
-<pre><code class="shell">git branch 分支名称</code></pre>
-<p>9、切换分支</p>
-<pre><code class="shell">git checkout 分支名称</code></pre>
-<p>10、新建分支并自动切换</p>
-<pre><code class="shell">git checkout -b 分支名称</code></pre>
-<p>11、删除分支</p>
-<pre><code class="shell">git branch -d 名称</code></pre>
-<blockquote>
-<p>说明：</p>
-<ol>
-<li>应当先切换到其他分支再删除此分支。</li>
-<li>出于安全考虑，没有被合并到 <code>master</code> 的分支在删除时会失败</li>
-</ol>
-</blockquote>
-<p>12、合并分支</p>
-<pre><code class="shell">git merge 分支名称</code></pre>
-<p>13、放弃解决冲突，取消<code>merge</code></p>
-<pre><code class="shell">git merge --abort</code></pre>
-<p>14、查看详细的改动历史</p>
-<pre><code class="shell">git log -p</code></pre>
-<p>15、查看简要的改动统计</p>
-<pre><code class="shell">git log --stat</code></pre>
-<p>16、 查看具体的<code>commit</code></p>
-<pre><code class="shell">//查看当前的commit
-git show
+let firstName: string = &#39;Axton&#39;
+let message: string = `hello $&#123;firstName&#125;`
+message = null    // null 和 undefined 是任何类型的子类型
 
-//查看具体一个commit
-git show 引用</code></pre>
-<p>17、想看到执行<code>git commit</code>后，将会提交什么</p>
-<pre><code class="shell">git diff --staged</code></pre>
-<p>18、想看到把所有文件都 <code>add</code> 后，将会向缓存区中增加什么内容</p>
-<pre><code class="shell">git diff</code></pre>
-<p>19、想看到把所有文件都 <code>add</code> 然后 <code>git commit</code>后，将会提交什么</p>
-<pre><code class="shell">git diff HEAD</code></pre>
-<p>20、撤销上一次提交，并将暂存区文件重新提交（会将新的<code>commit</code>替换掉原有的<code>commit</code>）</p>
-<pre><code class="shell">// 把错误修改后，再执行以下命令
-git add .
-git commit --amend</code></pre>
-<p>21、撤回最新的<code>commit</code></p>
-<pre><code class="shell">git reset --hard HEAD^</code></pre>
-<blockquote>
-<p>注意：中间不同参数有不同的作用</p>
-<ol>
-<li><code>--hard</code>：撤回最新的<code>commit</code>的同时，清空工作目录的所有改动；</li>
-<li><code>--soft</code>：撤回最新的<code>commit</code>的同时，保留工作目录和缓存区的内容。</li>
-<li><code>--mixed</code>（默认可以不写）：撤回最新的<code>commit</code>的同时，保留工作目录的内容，并清空缓存区。</li>
-</ol>
-</blockquote>
-<p>22、临时存放工作目录的改动</p>
-<pre><code class="shell">// 临时存放工作目录的改动
-git stash
+let n: null = null
+let u: undefined = undefined
 
-// 让没有被add过的文件也能临时存放
-git stash -u
+let notSure: any = 20   // 当不确定传入的参数是什么类型时，可以用 any （不建议使用）
+notSure = &#39;maybe a string&#39;
+notSure = true
 
-// 将临时文件移动回工作目录
-git stash pop</code></pre>
-<h2 id="写在最后的话"><a href="#写在最后的话" class="headerlink" title="写在最后的话"></a>写在最后的话</h2><p>本来这段话是写在“前言”的，但我怕大家看到这大段废话而走开，所以移动到了最后。我是一名前端爱好者，从开始学习前端至今也有几个月的时间了。对于一名程序员来说，写博客的重要性不言而喻，不仅可以帮助自己整理归纳知识，还可以和他人分享学习、结交到朋友，甚至可以得到一些成就感。但是，我却迟迟不敢迈出这第一步，总是被太多想法束缚着，觉得写出来没有什么技术含量、没有意义会被别人嘲笑。今天，是我迈出的第一步，希望我能有一个好的开始，对于我的一些错误也欢迎大家纠正！</p>
+notSure.myName
+notSure.getName()</code></pre>
+<h4 id="（2）数组和元组"><a href="#（2）数组和元组" class="headerlink" title="（2）数组和元组"></a>（2）数组和元组</h4><pre><code class="ts">let arrOfNumber: number[] = [1,2,3]   //定义number类型的数组
+arrOfNumber.push(3)
+
+function test () &#123;
+  console.log(arguments)    //类数组
+&#125;
+
+let user: [string, number] = [&#39;Axton&#39;, 20]    // 定义元组，与数据类型只能一一对应
+user.push(&#39;Tang&#39;)   // 只能是上面两种数据类型之一</code></pre>
+<h4 id="（3）Interface-接口"><a href="#（3）Interface-接口" class="headerlink" title="（3）Interface 接口"></a>（3）Interface 接口</h4><p><em>对对象的形状进行描述</em></p>
+<pre><code class="ts">interface Person &#123;
+  name: string,   //定义接口的属性
+  age?: number    //如何该属性可选就可以改为 &#39;?:&#39; 这样如何实现该属性也不会报错
+  readonly sex: string    //设置只读属性
+&#125;
+
+let Axton: Person = &#123;   //声明变量， 实现这个接口
+  name: &#39;Axton Tang&#39;,   // 必须与接口的属性一致
+  age: 20,
+  sex: &#39;男&#39;
+&#125;
+</code></pre>
+<h4 id="（4）函数"><a href="#（4）函数" class="headerlink" title="（4）函数"></a>（4）函数</h4><pre><code class="ts">const add = (x: number, y:number, z?: number): number =&gt; &#123;
+  if (typeof z === &#39;number&#39;) &#123;
+    return x+y+z
+  &#125; else &#123;
+    return x+y
+  &#125;
+&#125;
+
+add(1,2,3)
+
+interface ISum &#123;    //用接口来描述函数类型
+  (x: number, y: number, z?: number): number
+&#125;
+
+let add2: ISum = add</code></pre>
+<h4 id="（5）类型推论-联合类型和-类型断言"><a href="#（5）类型推论-联合类型和-类型断言" class="headerlink" title="（5）类型推论  联合类型和  类型断言"></a>（5）类型推论  联合类型和  类型断言</h4><p>1、类型推论： 在没有明确指明变量的类型时，TS 会根据你第一次的赋值推测出这个变量的类型，之后再进行赋值成其他类型会报错</p>
+<p>2、联合类型：</p>
+<p>当变量是联合类型时，只能使用联合类型共有的属性和方法</p>
+<pre><code class="ts">let str = &#39;string&#39;
+
+// 联合类型
+let numberOrString: number | string
+numberOrString = 123
+numberOrString = &#39;Axton&#39;</code></pre>
+<p>3、类型断言：</p>
+<pre><code class="ts">// 由于使用联合类型后只能用共有属性和方法，但是有时候想用特有的方法，就可以使用类型断言
+// 方法一
+function getLength(input: string | number): number &#123;
+  const str = input as string        // 注意： 此处并不是把它转化成这个类型
+  if (str.length) &#123;
+    return str.length
+  &#125; else &#123;
+    const number = input as number
+    return number.toString().length
+  &#125;
+&#125;
+
+// 方法二
+//type guard
+function getLength2(input: string | number): number &#123;
+  if (typeof input === &#39;string&#39;) &#123;        // 使用条件判断会自动缩小范围，可以使用该类型特有方法
+    return input.length
+  &#125; else &#123;
+    return input.toString().length
+  &#125;
+&#125;</code></pre>
+<h4 id="（6）类-Class"><a href="#（6）类-Class" class="headerlink" title="（6）类 Class"></a>（6）类 Class</h4><pre><code class="ts">class Animal &#123;
+  readonly name: string;
+  constructor(name) &#123;
+    this.name = name
+  &#125;
+  run() &#123;
+    return `$&#123;this.name&#125; is running`
+  &#125;
+&#125;
+const snake = new Animal(&#39;lily&#39;)
+console.log(snake.run())
+
+class Dog extends Animal &#123;
+  bark() &#123;
+    return `$&#123;this.name&#125; is barking`
+  &#125;
+&#125;
+
+const xiaobao = new Dog(&#39;xiaobao&#39;)
+console.log(xiaobao.run())
+console.log(xiaobao.bark())
+
+class Cat extends Animal &#123;
+  static categories = [&#39;mammal&#39;]
+  constructor(name) &#123;
+    super(name)
+    console.log(this.name)
+  &#125;
+  run() &#123;
+    return &#39;Meow, &#39; + super.run()
+  &#125;
+&#125;
+const maomao = new Cat(&#39;maomao&#39;)
+console.log(maomao.run())
+console.log(Cat.categories)</code></pre>
+<h4 id="（7）类和接口"><a href="#（7）类和接口" class="headerlink" title="（7）类和接口"></a>（7）类和接口</h4><pre><code class="ts">interface Redio &#123;
+  switchRedio(trigger: boolean):void;
+&#125;
+
+interface Battery &#123;
+  checkBatteryStatus(): void;
+&#125;
+
+interface RedioWithBattery extends Redio &#123;        // 接口继承接口
+  checkBatteryStatus(): void;
+&#125;
+
+class car implements Redio &#123;
+  switchRedio(trigger: boolean) &#123;
+    ...
+  &#125;
+&#125;
+
+class cellPhone implements RedioWithBattery &#123;
+  switchRedio(trigger: boolean) &#123;
+    ...
+  &#125;
+  checkBatteryStatus() &#123;
+    ...
+  &#125;
+&#125;</code></pre>
+<h4 id="（8）枚举（Enum）"><a href="#（8）枚举（Enum）" class="headerlink" title="（8）枚举（Enum）"></a>（8）枚举（Enum）</h4><pre><code class="ts">enum Direction &#123;        // 如果在enum前面加上 const 则为常量枚举
+  up = 10,   // 值默认从 0 开始， 此处赋值后从 10 开始增加
+  down,
+  left,
+  right
+&#125;
+
+console.log(Direction.up)   // 值为 10 
+
+
+enum Direction2 &#123;
+  str1 = &#39;STR1&#39;,
+  str2 = &#39;STR2&#39;
+&#125;
+
+const value = &#39;STR1&#39;
+if (value === Direction2.str1) &#123;
+  console.log(&#39;go str1&#39;)
+&#125;</code></pre>
+<h4 id="（9）泛型（Generics）"><a href="#（9）泛型（Generics）" class="headerlink" title="（9）泛型（Generics）"></a>（9）泛型（Generics）</h4><pre><code class="ts">function echo&lt;T&gt;(arg: T): T &#123;
+  return arg
+&#125;
+
+const result = echo(true)   // 只有当参数传递时才能确定类型，传入什么类型返回什么类型
+
+function swap&lt;T, U&gt;(tuple: [T, U]): [U, T] &#123;
+  return [tuple[1], tuple[0]]
+&#125;
+
+const result2 = swap([&#39;string&#39;, 123])</code></pre>
+<p><strong>约束泛型</strong></p>
+<p>由于使用泛型时不确定参数的类型，所以不能直接使用传入参数类型的方法和属性，使用时继承需要用到的接口的方法和属性即可使用。</p>
+<pre><code class="ts">interface IWithLength &#123;
+  length: number
+&#125;
+
+function echoWithLength&lt;T extends IWithLength&gt; (arg: T): T &#123;
+  console.log(arg.length)
+  return arg
+&#125;
+
+const str = echoWithLength(&#39;str&#39;)
+const obj = echoWithLength(&#123;length: 10, width: 20&#125;)
+const arr = echoWithLength([1, 2, 3])</code></pre>
+<p><strong>泛型在类中的使用</strong></p>
+<pre><code class="ts">class Queue&lt;T&gt; &#123;
+  private data = []
+  push (item: T) &#123;
+    return this.data.push(item)
+  &#125;
+  pop () &#123;
+    return this.data.shift()
+  &#125;
+&#125;
+
+const queue = new Queue&lt;number&gt;()
+
+queue.push(123)
+console.log(queue.pop().toFixed())</code></pre>
+<p><strong>泛型在接口中的使用</strong></p>
+<pre><code class="ts">interface KeyPair&lt;T, U&gt; &#123;
+  key: T,
+  value: U
+&#125;
+
+let kp1: KeyPair&lt;string, number&gt; = &#123;key: &#39;string&#39;, value: 20&#125;
+let kp2: KeyPair&lt;number, string&gt; = &#123;key: 10, value: &#39;str&#39;&#125;
+
+// 定义 number 类型的数组的两种方法
+let arr1: number[] = [1, 2, 3]
+let arr2: Array&lt;number&gt; = [1, 2, 3]</code></pre>
+<h4 id="（10）类型别名、字面量、交叉类型"><a href="#（10）类型别名、字面量、交叉类型" class="headerlink" title="（10）类型别名、字面量、交叉类型"></a>（10）类型别名、字面量、交叉类型</h4><pre><code class="ts">// 类型别名
+type plusType = (x: number, y: number) =&gt; number
+let sum: plusType
+const result1 = sum(1, 2)
+
+type numOrStr = number | string
+let result2: numOrStr = &#39;str&#39;
+result2 = 123
+
+// 字面量
+const str: &#39;name&#39; = &#39;name&#39;
+const number: 1 = 1
+
+type Directions = &#39;up&#39; | &#39;down&#39; | &#39;left&#39; | &#39;right&#39;
+let toWhere: Directions = &#39;up&#39;
+
+// 交叉类型
+interface IName &#123;
+  name: string
+&#125;
+
+type IPerson =  IName &amp; &#123;age: number&#125;
+let person: IPerson = &#123;name: &#39;Axton&#39;, age: 20&#125;</code></pre>
+<h4 id="（11）声明文件"><a href="#（11）声明文件" class="headerlink" title="（11）声明文件"></a>（11）声明文件</h4><p>在使用一些第三方库的时候，ts 并不知道我们引入的是什么文件，所以会报错</p>
+<p>此时需要定义声明文件</p>
+<pre><code class="ts">// 声明文件一般放到以 .d.ts 结尾的文件中
+declare var jQuery: (selector: string) =&gt; any;
+
+// 例：使用
+jQuery(&#39;#foo&#39;)</code></pre>
+<p>很多第三方库都会有现成的声明文件，我们通过 npm 安装就好</p>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -271,7 +465,7 @@ git stash pop</code></pre>
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>目录</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">常用命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E6%9C%80%E5%90%8E%E7%9A%84%E8%AF%9D"><span class="toc-number">3.</span> <span class="toc-text">写在最后的话</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Typescript-%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">Typescript 基础</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AFTypescript%EF%BC%9F"><span class="toc-number">1.1.</span> <span class="toc-text">1、什么是Typescript？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8-TS-%EF%BC%9F"><span class="toc-number">1.2.</span> <span class="toc-text">2、为什么要使用 TS ？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text">3、基础使用</span></a></li></ol></li></ol>
                 </div>
             </div>
             
