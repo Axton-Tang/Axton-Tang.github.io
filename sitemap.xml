@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.axton-tang.top/2020/11/16/Mongodb%E5%9F%BA%E7%A1%80%EF%BC%8C%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%BC%9A%E4%BD%BF%E7%94%A8Node.js%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    
+    <lastmod>2020-11-16</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.axton-tang.top/whoami/index.html</loc>
     
     <lastmod>2020-10-30</lastmod>
@@ -60,7 +67,7 @@
 
   <url>
     <loc>https://www.axton-tang.top/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -68,21 +75,28 @@
   
   <url>
     <loc>https://www.axton-tang.top/tags/git/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axton-tang.top/tags/Mongodb/</loc>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.axton-tang.top/tags/typescript/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.axton-tang.top/tags/vue/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -91,21 +105,28 @@
   
   <url>
     <loc>https://www.axton-tang.top/categories/Tools/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axton-tang.top/categories/Mongodb/</loc>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.axton-tang.top/categories/typescript/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.axton-tang.top/categories/vue/</loc>
-    <lastmod>2020-10-30</lastmod>
+    <lastmod>2020-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>

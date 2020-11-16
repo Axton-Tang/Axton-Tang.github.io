@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Archive</title>
+    <title>Tag: Mongodb - Axton&#39;s Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
@@ -53,154 +53,174 @@
     </div>
     <span id="config-title" style="display:none">Axton&#39;s Blog</span>
     <div id="loader"></div>
-    <div id="single" class="page">
-    <div id="top">
-        <a class="iconfont icon-left image-icon" href="javascript:history.back()"></a>
+    <div class="nav">
+    <ul id="menu-menu" class="menu">
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/whoami/" title="ABOUT" external="false">ABOUT</a>
+        </li>
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/categories/" title="CATEGORIES" external="false">CATEGORIES</a>
+        </li>
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/tags/" title="TAGS" external="false">TAGS</a>
+        </li>
+        
+        <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/archives/" title="ARCHIVES" external="false">ARCHIVES</a>
+        </li>
+        
+    </ul>
+    <p class="copyright" id="copyright">
+        &copy; 2020 Axton Tang.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+    </p>
+</div>
+
+<div id="container">
+    
+<div class="search-box">
+    <form class="site-search-form">
+        <span class="iconfont icon-search"></span>
+        <input type="text" id="local-search-input" class="st-search-input" />
+        <div class="iconfont icon-cross search-box-close"></div>
+    </form>
+    <div class="search-scrollable">
+        <div id="local-search-result" class="local-search-result-cls" data-initialise="首次搜索，正在载入索引文件，请稍后……"
+            data-start="输入关键词搜索。" data-empty="没有找到内容，请尝试更换检索词。">
+            <span>输入关键词搜索。</span>
+        </div>
     </div>
-    <div class="dark-obsidian section">
-        <div class="article animated fadeIn">
-            <div class="main">
-                <div class="content animated fadeIn">
-                    <div class="set">
-                        <h1 style="text-align: center">Archived</h1>
-                        <p style="text-align: center">「 4 」</p>
-                        <ul class="timeline timeline-centered">
-                            
-                            
-                                
-                                <li class="timeline-item period">
-                                    <div class="timeline-info"></div>
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h2 class="timeline-title">十一月 2020</h2>
-                                    </div>
-                                </li>
-                                
-                                <li class="timeline-item">
-                                    <div class="timeline-info">
-                                        <span class="gradient-text">十一月 16, 2020</span>
-                                    </div>
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <a class="timeline-title" target="_self" href="/2020/11/16/Mongodb%E5%9F%BA%E7%A1%80%EF%BC%8C%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%BC%9A%E4%BD%BF%E7%94%A8Node.js%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/">Mongodb基础，快速学会使用Node.js操作数据库</a>
-                                        <p>
-                                            一、Mongodb 介绍Mongodb 是一个文档数据库，以文档形式存储数据，格式类似于 JSON
-与 Mysql 的特点及选型对照
+</div>
+<div id="header">
+    <div>
+        <div class="logo animated fadeInDown">
+            <img src="/img/axton-avatar.jpg" alt="">
+            <a class="image-logo" href="/"></a>
+        </div>
+        <ul id="menu-menu" class="menu text-menu">
+            
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/whoami/" title="ABOUT" external="false" class="menu-link">ABOUT</a>
+            </li>
+            
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/categories/" title="CATEGORIES" external="false" class="menu-link">CATEGORIES</a>
+            </li>
+            
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/tags/" title="TAGS" external="false" class="menu-link">TAGS</a>
+            </li>
+            
+            <li class="animated fadeInDown menu-item menu-item-type-post_type menu-item-object-page">
+                <a href="/archives/" title="ARCHIVES" external="false" class="menu-link">ARCHIVES</a>
+            </li>
+            
+            
+        </ul>
+        <div class="iconfont icon-menu switchmenu gradient-text animated fadeInDown"></div>
+    </div>
+</div>
+<div id="screen">
+    <div id="mark">
+        <div class="cover animated fadeIn" style="
+            animation-delay: 900ms;
+            animation-duration: 2.8s;
+            background-image:
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.56), #100e17),
+                url(/img/cover.jpg);">
+        </div>
+    </div>
+    
+    <div id="post0" class="else">
+        <p class="animated fadeInDown">
+            
+            <a href="/categories/Mongodb"><b>「
+                </b>MONGODB<b> 」</b></a>
+            
+            十一月 16, 2020
+        </p>
+        <h3 class="post-title animated fadeInDown">
+            <a href="/2020/11/16/Mongodb%E5%9F%BA%E7%A1%80%EF%BC%8C%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%BC%9A%E4%BD%BF%E7%94%A8Node.js%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/" title="Mongodb基础，快速学会使用Node.js操作数据库" class="posttitle">Mongodb基础，快速学会使用Node.js操作数据库</a></h3>
+        
+        <p class="post-count animated fadeInDown">
+            
+            <span>
+                <b class="iconfont icon-text2"></b> <i>文章字数</i>
+                13k
+            </span>
+            
+            
+            <span>
+                <b class="iconfont icon-timer__s"></b> <i>阅读约需</i>
+                12 mins.
+            </span>
+            
+            
+            <span id="/2020/11/16/Mongodb基础，快速学会使用Node.js操作数据库/" class="leancloud_visitors" data-flag-title="">
+                <b class="iconfont icon-read"></b> <i>阅读次数</i>
+                <span class="leancloud-visitors-count">1000000</span>
+            </span>
+            
+        </p>
+        
+        
+        <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/Mongodb/" rel="tag">Mongodb</a></li></ul>
+        
+        <div class="md-content animated fadeIn">
+            
+            <p><strong><code>Mongodb</code> 是一个文档数据库，以文档形式存储数据，格式类似于 <code>JSON</code></strong></p>
+<h3 id="与-Mysql-的特点及选型对照"><a href="#与-Mysql-的特点及选型对照" class="headerlink" title="与 Mysql 的特点及选型对照"></a>与 Mysql 的特点及选型对照</h3><table>
+<thead>
+<tr>
+<th align="center"></th>
+<th align="center">Mongodb</th>
+<th align="center">Mysql</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><strong><em>关系类型</em></strong></td>
+<td align="center">非关系型</td>
+<td align="center">关系型</td>
+</tr>
+<tr>
+<td align="center"><strong><em>存储类型</em></strong></td>
+<td align="center">文档存储（类似于写 Word ）</td>
+<td align="center">表格存储 （类似于写 Excle）</td>
+</tr>
+<tr>
+<td align="center"><strong><em>操作类型</em></strong></td>
+<td align="center">NoSQL 操作 （不需...</td></tr></tbody></table>
+            
+            <span class="read-more"><a href="/2020/11/16/Mongodb%E5%9F%BA%E7%A1%80%EF%BC%8C%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%BC%9A%E4%BD%BF%E7%94%A8Node.js%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/" title="查看全文" class="posttitle">查看全文</a>
+                <b class="iconfont icon-arrow-right- gradient-text"></b></span>
+        </div>
+    </div>
+    
+</div>
 
-
-
-Mongodb
-Mysql
-
-
-
-关系类型
-非关系型
-关系型
-
-
-存储类型
-文档存储（类似于写 Word ）
-表格存储 （类似于写 Excle）
-
-
-操作类型
-NoSQL 操作 （不需要写 sql 语句）
-SQL 操作
-
-
-选型对照
-适合存储格式比较松散...
-                                        </p>
-                                    </div>
-                                </li>
-                            
-                                
-                                <li class="timeline-item period">
-                                    <div class="timeline-info"></div>
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h2 class="timeline-title">十月 2020</h2>
-                                    </div>
-                                </li>
-                                
-                                <li class="timeline-item">
-                                    <div class="timeline-info">
-                                        <span class="gradient-text">十月 19, 2020</span>
-                                    </div>
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <a class="timeline-title" target="_self" href="/2020/10/19/Vue3%20%E6%96%B0%E7%89%B9%E6%80%A7/">Vue3 新特性</a>
-                                        <p>
-                                            Vue3 新特性1、初始化开发环境// 安装 / 更新 vue-cli （保证版本在4.5.0以上）
-npm install -g @vue/cli
-
-// 创建
-vue create vue3-basic
-
-// 然后选择 Manually select features （因为我们需要使用TS），进入界面后选择TS（按空格选择）
-
-// 然后选择Vue3， 后面都保持默认和选择 No
-
-...
-                                        </p>
-                                    </div>
-                                </li>
-                            
-                                
-                                <li class="timeline-item">
-                                    <div class="timeline-info">
-                                        <span class="gradient-text">十月 18, 2020</span>
-                                    </div>
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <a class="timeline-title" target="_self" href="/2020/10/18/Typescript%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/">Typescript 基础</a>
-                                        <p>
-                                            Typescript 基础1、什么是Typescript？编程语言有以下两种类型：
-
-动态类型语言： 只有在运行时才能确定变量的类型 （例如JS / Python）
-静态类型语言： 在编译时就已经确定了变量类型，以及能够检查出错误（例如 c++ / c / c# / java）
-
-TS 的特点：
-
-Javascript that scales （JS的超集）
-静态类型风格的类型系统
-从es6...
-                                        </p>
-                                    </div>
-                                </li>
-                            
-                                
-                                <li class="timeline-item period">
-                                    <div class="timeline-info"></div>
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <h2 class="timeline-title">九月 2020</h2>
-                                    </div>
-                                </li>
-                                
-                                <li class="timeline-item">
-                                    <div class="timeline-info">
-                                        <span class="gradient-text">九月 05, 2020</span>
-                                    </div>
-                                    <div class="timeline-marker"></div>
-                                    <div class="timeline-content">
-                                        <a class="timeline-title" target="_self" href="/2020/09/05/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86%EF%BC%8C%E7%BB%99%E5%88%9D%E5%AD%A6%E8%80%85%E7%9A%84%E5%BF%AB%E9%80%9F%E6%9F%A5%E9%98%85%E6%8C%87%E5%8D%97/">Git 常用命令整理，给初学者的快速查阅指南</a>
-                                        <p>
-                                            前言我只在刚学前端时了解过git的一些基础命令，只会一些commit/push/pull等，后来发现越来越不够用了，特别是在想和别合作完成一个项目时，特别害怕自己因为对git操作不熟悉而使项目难以进行。最近，我系统的学习了一些git的原理和命令，整理出来了一些命令给各位初学者一点指南，特别是在大家初学时对一些命令不熟悉可以拿来方便查阅。
-常用命令1、从远程仓库克隆代码
-git clone 从...
-                                        </p>
-                                    </div>
-                                </li>
-                            
-                        </ul>
-                    </div>
-                </div>
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="typed-text"></span>
+                </p>
             </div>
         </div>
     </div>
 </div>
+
+    <div id="primary">
+        
+    </div>
+    
+</div>
+<div id="preview"></div>
+
 
     <div id="back-to-top" class="animated fadeIn faster">
         <div class="flow"></div>
